@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Semantic HTML5: </title>
+
+    <meta name="description" content="An introduction to using semantic HTML5 tags for improved accessibility, SEO, and code readability.">
+</head>
+<body>
+
+    <!--
+        The <header> element represents a container for introduction or a set of navigational links.
+        It's a top-level landmark for the page.
+    -->
+    <header>
+        <!-- The <h1> tag should be the main heading for the entire page, used only once -->
+        <h1>Semantic HTML5</h1>
+        <!--
+            The <nav> element represents a section of a page whose purpose is to provide navigation links.
+            This is a key landmark for screen readers.
+        -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#what-is-semantic">What is it?</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+        The <main> element represents the dominant content of the <body> of a document.
+        It is a primary landmark for assistive technologies and should be used only once per page.
+    -->
+    <main id="main-content">
+        <!--
+            The <section> element represents a standalone section that doesn't necessarily have a heading.
+            It's good for grouping related content.
+        -->
+        <section id="what-is-semantic">
+            <!-- Headings should follow a logical, hierarchical order -->
+            <h2>What are Semantic HTML Tags?</h2>
+            <p>Semantic HTML5 tags provide meaning to a web page rather than just presentation. Tags like `<header>`, `<nav>`, `<main>`, `<article>`, and `<footer>` clearly describe their content to both the browser and the developer.</p>
+        </section>
+
+        <!--
+            The <article> element is a self-contained composition in a document, page, application, or site,
+            which is intended to be independently distributable or reusable.
+        -->
+        <article id="benefits">
+            <h2>The Benefits of Semantic HTML</h2>
+            <!-- Use subheadings to break up content and create a clear hierarchy -->
+            <h3>Improved Accessibility</h3>
+            <p>Screen readers and other assistive technologies use semantic tags to navigate a page more effectively. For example, the `<nav>` tag lets a screen reader user know that a block of links is for navigation, allowing them to jump directly to it.</p>
+
+            <h3>Better Search Engine Optimization (SEO)</h3>
+            <p>Search engine crawlers understand the structure of your page better when you use semantic tags. This helps them to index your content more accurately and can lead to better rankings.</p>
+
+            <h3>Cleaner and More Maintainable Code</h3>
+            <p>When you use descriptive tags, your code becomes easier for other developers (and your future self!) to read and understand. This leads to more efficient development and maintenance.</p>
+        </article>
+
+        <!--
+            The <aside> element represents a portion of a document whose content is only indirectly
+            related to the document's main content. It's often presented as a sidebar.
+        -->
+        <aside aria-label="Related content">
+            <h3>Learn More</h3>
+            <p>Dive deeper into semantic tags on the Mozilla Developer Network (MDN) or other reputable web development resources.</p>
+        </aside>
+    </main>
+
+    <!--
+        The <footer> element represents a footer for its nearest ancestor sectioning content
+        or sectioning root element. A <footer> typically contains information about its containing element.
+    -->
+    <footer id="contact">
+        <p>&copy; 2024 Precious Zawadi. All rights reserved.</p>
+        <p>Contact: <a href="mailto:pjzawadi18@gmail.com">pjzawadi18@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
